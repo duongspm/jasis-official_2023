@@ -450,3 +450,27 @@
 .seminar-row:nth-child(1){
     border-top: 1px solid #bddfeb; 
 }
+.seminar__link{
+    padding: 35px 0 45px 0;
+    margin: 0 auto;
+}
+.seminar__btn{
+    background-color: #0075b8;
+    border-radius: 5px;
+    padding: 20px 80px;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+}
+.seminar__btn::after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 5px solid #ffffff;
+    border-bottom: 3px solid transparent;
+    content: "";
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
