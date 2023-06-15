@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* Terms of use */
+#terms{line-height: 2;}
+#terms .rows{margin-bottom: 20px;}
+
+.terms-rows{margin: 0 0 40px;}
+.terms-rows:last-of-type{margin: 0;}
+
+.terms-list li{margin-left: 1em; text-indent: -1em;}

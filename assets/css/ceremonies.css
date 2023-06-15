@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* Ceremonies */
+.mv{background: url("../img/outline/mv.jpg") no-repeat center center/cover;}
+
+/* Download */
+.download{text-align: center;}
+.download-btn{display: flex; flex-wrap: wrap; justify-content: center; margin: 0 -6px;}
+.download-btn a{max-width: 352px; width: 100%; display: block; border: 2px solid #347bbb; position: relative; font-size: 1.8rem; line-height: 1.4; font-weight: 500; background: linear-gradient(to bottom, #fff 0, #fff 50%, #e1ebf5 51%, #e1ebf5 100%); color: #357bbb; padding: 7px 0; margin: 0 6px 12px;}
+.download-btn a:after{content: '';  position: absolute; top: 50%; margin-top: -3px; right: 3.3%; border: solid #357bbb; border-width: 0 1px 1px 0; display: inline-block; padding: 3px; transform: rotate(-45deg); -webkit-transform: rotate(-45deg);}
+.download-btn a:hover{background: #e1ebf5;}
+.download-btn a.un{pointer-events: none;}
+.download-btn span{display: block; font-size: 1.3rem;}
+.download-note{font-size: 1.6rem;}
+
+/* Ceremonies */
+.ceremonies-img{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.ceremonies-img figure{text-align: center; width: 47.3%;}
+.ceremonies-img figcaption{padding: 5px 0 0 0;}
+
+.ceremonies-box:not(:last-of-type){margin: 0 0 40px;}
+.ceremonies-box h4{font-size: 1.6rem; font-weight: 500; margin: 0 0 10px;}
+.ceremonies-box h4 span{padding-left: 1.3em; display: inline-block;}
+
+.ceremonies-list li{text-indent: 1em;}
+
+@media (max-width: 767px){
+    .ceremonies-img figure{width: 100%;}    
+    .ceremonies-img figure:nth-of-type(1){margin: 0 0 20px;}
+    
+    .ceremonies-box h4 span{display: block;}
+}
+
+/* Photo */
+.venue-txt{text-align: center; margin: 0 0 30px;}
+.photobook{display: flex; flex-wrap: wrap;}
+
+@media (min-width: 768px){
+    .photobook li{width: 31.82%; margin: 0 2.27% 2.27% 0;}
+    .photobook li:nth-of-type(3n){margin-right: 0;}
+}
+
+@media (max-width: 767px){
+    .photobook li{width: 48%; margin: 0 2% 2% 0;}
+    .photobook li:nth-of-type(2n){margin-right: 0;}
+}

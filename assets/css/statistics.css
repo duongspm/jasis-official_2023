@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* Statistics */
+.mv{background: url("../img/outline/mv.jpg") no-repeat center center/cover;}
+
+#statistics h3{font-size: 2rem; line-height: 1.5; color: #333; font-weight: bold; margin: 0 0 20px;}
+#statistics h4{margin: 0 0 10px; font-weight: normal;}
+
+.box-tbl{display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0 0 30px;}
+.box-tbl .col3{width: 32%;}
+.box-tbl .col2{width: 49%;}
+
+.tbl-info{width: 100%; border: 1px solid #ccc;}
+.tbl-info th{background: #f0f0f0; padding: 10px;}
+.tbl-info td,
+.tbl-info th{padding: 10px; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; text-align: center;}
+.tbl-info th span{font-size: 1.2rem;}
+.tbl-info td.small{font-size: 1.3rem;}
+.tbl-info .num-red{color: red; font-size: 2rem; font-weight: bold;}
+
+.tbl-info01 th{height: 69px;}
+.tbl-info02 th{width: 50%;}
+.tbl-info04 th{width: 200px;}
+.tbl-info04 td{text-align: left;}
+.tbl-uniqueVisitors td{height: 165px;}
+
+@media (max-width: 767px){    
+    .box-tbl{margin: 0 0 20px;}
+    .box-tbl .col3,
+    .box-tbl .col2{width: 100%; margin: 0 0 15px;}
+    
+    .tbl-info td,
+    .tbl-info th{padding: 10px 5px;}
+}
+
+/* Btn */
+.statistics-btn{display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0 auto 80px;}
+.statistics-btn a{width: 49%; font-size: 2rem; font-weight: bold; color: #fff; display: block; position: relative; text-align: center; border-radius: 5px; background: #333; padding: 18px 0;}
+.statistics-btn a:after{position: absolute; top: 50%; transform: translateY(-50%); right: 2%; content: ''; width: 0; height: 0; border-top: 3px solid transparent; border-left: 6px solid #fff; border-bottom: 3px solid transparent;}
+.statistics-btn a:hover{background: #000;}
+
+@media (max-width: 1024px) and (min-width: 768px){
+    .statistics-btn a{font-size: 2vw;}
+}
+
+@media (max-width: 767px){
+    .statistics-btn{margin: 0 auto 50px;}
+    .statistics-btn a{width: 100%;}
+    .statistics-btn a:not(:last-of-type){margin: 0 0 10px;}
+}
+
+@media (max-width: 480px){
+    .statistics-btn a{font-size: 4.3vw;}
+}

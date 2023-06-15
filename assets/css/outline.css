@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* Outline */
+.mv{background: url("../img/outline/mv.jpg") no-repeat center center/cover;}
+
+.outline-btn{display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0 auto 60px;}
+.outline-btn a{width: 49%; text-align: center; display: block; border: 2px solid #347bbb; position: relative; font-size: 1.8rem; line-height: 1.4; font-weight: 500; background: linear-gradient(to bottom, #fff 0, #fff 50%, #e1ebf5 51%, #e1ebf5 100%); color: #357bbb; padding: 12px 0;}
+.outline-btn a:after{content: '';  position: absolute; top: 50%; margin-top: -3px; right: 3.3%; border: solid #357bbb; border-width: 0 1px 1px 0; display: inline-block; padding: 3px; transform: rotate(-45deg); -webkit-transform: rotate(-45deg);}
+.outline-btn a:hover{background: #e1ebf5;}
+
+.intro-wrap{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.intro-desc{width: calc(100% - 260px);}
+.intro-desc p{margin-bottom: 1.5em;}
+.intro-desc sup{font-size: 1rem;}
+.intro-desc .note{font-size: 1.2rem;}
+.intro-img{width: 225px;}
+
+.event-tbl{width: 100%; border: 1px solid #999;}
+.event-tbl th{background: #f0f0f0; width: 19%; padding: 10px 0; border-right: 1px solid #999; border-bottom: 1px solid #999; text-align: center; font-weight: 500;}
+.event-tbl td{width: 81%; padding: 10px 30px; border-bottom: 1px solid #999;}
+
+#covid{position: absolute; top: -135px; left: 0;}
+.covid-wrap{border: 1px solid #0076a8; position: relative;}
+.covid-tit{background-color: #0076a8; background-image: url("../img/outline/coivd_label1.jpg"), url("../img/outline/coivd_label2.jpg"); background-position: top left, top right; background-repeat: no-repeat, no-repeat; background-size: auto 100%, auto 100%; text-align: center; padding: 0 10px;}
+.covid-inner{padding: 4% 4.5% 4.5%;}
+.covid-list{max-width: 920px; margin: 0 auto; padding: 0 0 25px; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.covid-list li{margin-bottom: 25px;}
+.covid-list li:nth-of-type(2n+1){width: 45%;}
+.covid-list li:nth-of-type(2n){width: 46.2%;}
+
+.outline-note{padding-top: 15px;}
+
+/* Responsive */
+@media (max-width: 1023px){
+    .outline-btn{max-width: 480px;}
+    .outline-btn a{width: 100%;}
+    .outline-btn a:nth-of-type(1){margin-bottom: 15px;}
+}
+
+@media (max-width: 767px){    
+    .intro-desc{width: 100%;}
+    .intro-img{margin: 20px auto 0;}
+    
+    .event-tbl th{width: 110px;}
+    .event-tbl td{width: auto; padding: 10px 15px;}
+    
+    #covid{top: -80px;}
+    .covid-inner{padding: 20px 15px;}
+    .covid-list li{width: 100% !important; margin-bottom: 15px;}
+}

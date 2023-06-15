@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* Privacy */
+#privacy{line-height: 2;}
+#privacy .rows{margin-bottom: 20px;}
+
+.privacy-rows{margin: 0 0 40px;}
+.privacy-rows:last-of-type{margin: 0;}
+
+.privacy-list li{margin-left: 1.1em; text-indent: -1.1em;}
+.privacy-date{text-align: right; padding: 40px 0 0 0;}

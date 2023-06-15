@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* Webexpo Login */
+.mv{background: url("../img/webexpo/mv.jpg") no-repeat center center/cover;}
+
+#weblogin{text-align: center;}
+#weblogin .txt{margin: 0 auto 5rem; max-width: 450px; width: 100%; text-align: left;}
+#weblogin .txt p{text-indent: -1em; margin-left: 1em;}
+
+#weblogin form{max-width: 720px; margin: 0 auto 2rem;}
+#weblogin .row{display: flex; justify-content: space-between; align-items: center; margin: 0 0 2rem;}
+#weblogin .col1{width: 115px; text-align: left; font-size: 1.8rem; line-height: 1.4;}
+#weblogin .col2{width: calc(100% - 115px);}
+#weblogin .col2 input{border: 1px solid #ccc; padding: 0.5rem 1rem; background: #fff; font-size: 1.4rem; width: 100%; outline: none;}
+
+#weblogin .btn-login{width: 100%; max-width: 45rem; border-radius: 5px; position: relative; margin: 3rem auto 0; overflow: hidden;}
+#weblogin .btn-login input{padding: 1.2rem 0; border: none; font-size: 1.8rem; color: #fff; font-weight: bold; background-color: #263392; background-image: linear-gradient(0deg, #263392 0%, #263392 50%, #2d3cac 51%); cursor: pointer; display: block; width: 100%;}
+#weblogin .btn-login:after{content: ''; width: 0; height: 0; border-top: 3px solid transparent; border-left: 5px solid #fff; border-bottom: 3px solid transparent; position: absolute; top: 50%; right: 1.9rem; margin-top: -3px; display: block;}
+
+#weblogin .btn-login_link{width: 100%; max-width: 45rem; border-radius: 5px; position: relative; margin: 3rem auto 0; overflow: hidden; padding: 0.9rem 0; border: none; font-size: 1.8rem; color: #fff; font-weight: bold; background-color: #263392; background-image: linear-gradient(0deg, #263392 0%, #263392 50%, #2d3cac 51%); cursor: pointer; display: block; width: 100%;}
+#weblogin .btn-login_link:after{content: ''; width: 0; height: 0; border-top: 3px solid transparent; border-left: 5px solid #fff; border-bottom: 3px solid transparent; position: absolute; top: 50%; right: 1.9rem; margin-top: -3px; display: block;}
+
+#weblogin a.btn{font-size: 1.5rem; line-height: 1.5; padding: 0.3rem 0; display: block; border: 1px solid #2d3cac; background-color: #d9d9d9; background-image: linear-gradient(0deg, #d9d9d9 0%, #d9d9d9 50%, #ffffff 51%); border-radius: 3rem; position: relative;}
+#weblogin a.btn:after{content: ''; width: 0; height: 0; border-top: 3px solid transparent; border-left: 5px solid #2d3cac; border-bottom: 3px solid transparent; position: absolute; top: 50%; right: 1.9rem; margin-top: -3px; display: block;}
+
+#btn-inquiry{width: 100%; max-width: 45rem; margin: 0 auto 5rem; display: flex; justify-content: space-between;}
+#btn-inquiry a{width: 47%;}
+
+#btn-inquiry2{width: 100%; max-width: 45rem; margin: 0 auto 1rem; display: flex; justify-content: space-between;}
+#btn-inquiry2 a{width: 47%;}
+
+#btn-expo{width: 100%; max-width: 48rem; margin: 0 auto;}
+#btn-expo li:not(:last-of-type){margin: 0 0 2rem;}
+#btn-expo p{line-height: 1.4; margin: 0 0 0 1em; text-align: left; text-indent: -1em; padding: 0 0 0.5em 1em;}
+
+@media (max-width: 480px){
+    #weblogin .col1{width: 105px; font-size: 1.6rem;}
+    #weblogin .col2{width: calc(100% - 105px);}
+
+    #btn-inquiry a{width: 49%;}
+    #btn-inquiry2 a{width: 49%;}
+    
+    #weblogin a.btn{font-size: 1.4rem;}
+    #weblogin a.btn:after{right: 1rem;}
+}

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* Terms Of Use */
+.terms-box{margin: 0 0 60px;}
+.terms-box:last-of-type{margin: 0;}
+.terms-tit{font-weight: 500; font-size: 1.6rem; margin: 0 0 5px;}
+.terms-desc{margin: 0 0 10px;}
+.terms-list{list-style: decimal; margin: 0 0 0 2em;}
+.terms-list ul{list-style: none; margin: 0 0 0 2em;}
+.terms-list ul li{text-indent: -2em;}
+
+@media (max-width: 767px){
+    .terms-box{margin: 0 0 40px;}
+}

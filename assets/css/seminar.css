@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* Seminar */
+.mv{background: url("../img/seminar/mv.jpg") no-repeat center center/cover;}
+
+.bg-wrap{display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start;}
+.sidebar{width: 255px; background: #E2EBF7; color: #17517F; border-radius: 10px 0 0 10px; padding: 20px;}
+.result{width: calc(100% - 285px);}
+
+@media (max-width: 1023px){
+    .sidebar{width: 100%; padding: 15px; margin: 0 0 40px;}
+    .result{width: 100%;}
+}
+
+/* Sidebar */
+.sidebar .rows{border-bottom: 1px solid #17517F; padding: 20px 0;}
+.sidebar .rows:last-of-type{border-bottom: none;}
+
+.sidebar .tit{font-size: 1.6rem; font-weight: 500; margin: 0 0 10px;}
+.sidebar .tit:before{content: ''; background: url("../img/common/ic_search_blue.svg") no-repeat top left/100% 100%; width: 14px; height: 14px; display: inline-block; margin: 0 6px 0 0;}
+
+.download li{font-size: 1.6rem; font-weight: 500; text-decoration: underline; margin: 0 0 5px;}
+.download li:last-of-type{margin: 0;}
+.download a{position: relative; padding: 0 0 0 28px;}
+.download a:before{content: ''; width: 18px; height: 23px; background: url("../img/common/ic_pdf.svg") no-repeat top left/100% 100%; display: block; position: absolute; top: 0; left: 0;}
+.download a:hover{opacity: .8;}
+
+.subnav li{width: 100%; padding: 6px 0 7px; text-align: center; font-size: 1.6rem; font-weight: 500; border: 1px solid #17517F; background: #fff; cursor: pointer; border-radius: 5px; margin: 0 0 7px;}
+.subnav li:last-of-type{margin: 0;}
+.subnav li.is-active,
+.subnav li:hover{background: #17517F; color: #fff;}
+
+.txt-field{width: 100%; padding: 6px 15px 7px; border: 1px solid #b9b9b9; background: #fff; color: #17517F; font-size: 1.6rem; border-radius: 5px;}
+.select-field{width: 100%; padding: 6px 15px 7px; border: 1px solid #17517F; background: #fff url("../img/common/ic_select_down.svg") no-repeat right 10px center/13px 11px; font-size: 1.6rem; border-radius: 5px; color: #17517F;}
+.search-rows{margin: 0 0 6px;}
+.search-rows p{margin: 0 0 6px;}
+.search-desc{padding: 13px 0 18px;}
+.search-btn{width: 100%; padding: 7px 10px 8px; margin: 0 0 5px; background: #000; color: #fff; font-size: 1.6rem; font-weight: 500; border-radius: 5px; cursor: pointer;}
+.search-btn:hover{background: #17517F; color: #fff;}
+
+.attend p:not(:last-of-type){margin: 0 0 15px;}
+
+/* Result */
+.tab{display: none;}
+
+.seminar:not(:last-of-type){margin: 0 0 40px;}
+.seminar-head{background: #EFF2F4; color: #17517F; padding: 10px 20px; border-radius: 10px 10px 0 0; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.seminar-head .info{width: calc(100% - 160px); }
+.seminar-head .img{width: 120px; height: 85px; display: flex; justify-content: center; align-items: center;}
+.seminar-head .img img{max-height: 100%; height: auto; width: auto;}
+.seminar-head .date{font-size: 1.6rem; line-height: 1.5; font-weight: 500; border-bottom: 1px solid #afc2d1; padding: 6px 0 9px; margin: 0 0 8px;}
+.seminar-head .date span{font-size: 1.4rem; line-height: 1.2; width: 50px; padding: 1px 0 3px; text-align: center; display: inline-block; border-radius: 3px; overflow: hidden; background: #17517F; color: #fff; margin: 0 0 0 20px; position: relative; top: 5px;}
+.seminar-head .tit{font-size: 1.8rem; line-height: 1.5; font-weight: 500; padding: 0 0 5px;}
+
+.seminar-inner{border: 1px solid #DEDEDE; border-top: none; border-radius: 0 0 10px 10px; padding: 20px 20px 25px;}
+.seminar-inner .tit{font-size: 1.8rem; line-height: 1.5; font-weight: 500; margin: 0 0 10px;}
+
+@media (max-width: 1023px){
+    .seminar-head{padding: 10px 15px 20px;}
+    .seminar-head .info{width: 100%;}
+    .seminar-head .img{margin: 10px auto 0;}
+
+    .seminar-inner{padding: 20px 15px;}
+}
