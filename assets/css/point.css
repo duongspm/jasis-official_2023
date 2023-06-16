@@ -1240,6 +1240,9 @@
     .book__content {
         padding: 20px 20px 25px 20px;
     }
+    .register__box{
+        padding: 18px;
+    }
 }
 @media (max-width: 414px) {
     .lottery__title {
@@ -1271,5 +1274,25 @@
     .seminar__btn {
         width: 100%;
         padding: 20px 82px;
+    }
+    .benefits__right {
+        height: auto;
+    }
+    .seminar__table {
+        margin-top: 120px;
+    }
+    .lottery-col1{
+        width: 33%;
+    }
+    .lottery-col2{
+        width: 67%;
+    }
+}
+@media (max-width: 390px){
+    .seminar__btn {
+        padding: 20px 62px;
+    }
+    .info-row {
+        padding-left: 15px;
     }
 }
