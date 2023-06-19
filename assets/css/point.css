@@ -100,7 +100,16 @@
 .register__list p {
     margin-top: 5px;
 }
-
+.list-li-dot{
+    list-style-image:url('../img/point/point_dot.png');
+    line-height: 1.5;
+}
+.list-li-dot li p{
+    margin-left: -5px;
+}
+.list-li-dot-black{
+    color: #000000;
+}
 .text__dot {
     position: relative;
     line-height: 2;
@@ -158,7 +167,7 @@
 
 .register__bottom p {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .register__step {
@@ -452,6 +461,7 @@
 .benefits__left p {
     color: #ffffff;
     font-size: 19px;
+    font-weight: 500;
 }
 
 .benefits__right {
@@ -680,18 +690,17 @@
 }
 
 .info-row-list ul li {
-    /* list-style-type: decimal; */
+    list-style-type: decimal;
+    list-style-position: inside;
 }
 
 .info-row-list div {
     padding-top: 30px;
-    /* margin-left: -15px; */
 }
 
 .title--bgblack {
     color: #ffffff;
     font-size: 18px;
-    font-weight: bold;
     background-color: #000000;
     padding: 15px 0 15px 25px;
     margin-bottom: 20px;
@@ -699,7 +708,7 @@
 
 .txt-desc {
     font-size: 16px;
-    text-indent: 10px;
+    text-indent: 1em;
 }
 
 .book__box {
@@ -883,7 +892,7 @@
 @media (max-width: 1023px) {
     .info-col1 {
         background-color: #ececec;
-        width: 130px;
+        width: 100px;
         position: sticky;
         top: 0;
         left: 0;
@@ -975,12 +984,16 @@
 
     .book__arrow__img p {
         font-size: 24px;
-        /* transform: rotate(-90deg); */
-        /* -ms-writing-mode: tb-rl;
+        transform: rotate(-90deg);
+        -ms-writing-mode: tb-rl;
         -webkit-writing-mode: vertical-rl;
-        writing-mode: vertical-rl; */
-        /* width: 100%; */
-        background: red;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -27px;
     }
 
     .book__list__circle {
@@ -1065,6 +1078,7 @@
     .benefits__right {
         width: 100%;
         border-radius: 5px;
+        justify-content: center;
     }
 
     .seminar__table {
@@ -1200,7 +1214,7 @@
         margin-bottom: 2%;
     }
     .subnav a:after {
-        top: 25px !important;
+        top: 40% !important;
         right: 12px !important;
         left: unset;
         bottom: unset;
@@ -1230,9 +1244,16 @@
     }
     .lottery__table{
         width: 100%;
+        line-height: 1.5;
     }
     .register__content {
-        padding: 30px 30px;
+        padding: 20px;
+    }
+    .register__list{
+        padding: 0 20px;
+    }
+    .register__bottom p{
+        padding: 0 20px;
     }
     .only-sp686{
         display: block;
@@ -1287,12 +1308,85 @@
     .lottery-col2{
         width: 67%;
     }
+    .only-sp{
+        display: block;
+    }
+    .subnav a:after {
+        top: 40% !important;
+    }
+
+    .mr-t-50 {
+        margin-top: 30px;
+    }
+    .points__time{
+        font-size: 13px;
+    }
+    .txt--big{
+        font-size: 18px;
+    }
+    .info__table{
+        margin-top: 25px;
+    }
 }
 @media (max-width: 390px){
+    .giftcard__bg
+    {   
+        padding: 15px;
+    }
+    .points__time--from {
+        margin-right: 5px;
+    }
     .seminar__btn {
-        padding: 20px 62px;
+        padding: 20px;
+        text-align: center;
     }
     .info-row {
         padding-left: 15px;
+    }
+    .book__circle{
+        width: 40px;
+        height: 40px;
+    }
+    .book__circle::after {
+        width: 27px;
+        height: 27px;
+    }
+    .book--list {
+        width: calc(100% - 87px);
+    }
+    .book__list {
+        background-color: #e7f1f3;
+        padding: 20px 10px 20px 10px;
+        /* font-size: 13px; */
+    }
+    .book__list__circle{
+        width: auto;
+    }
+    .book--list{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .book__list__left {
+        margin-left: -25px;
+    }
+    .book__content {
+        padding: 15px;
+    }
+}
+@media (max-width: 320px){
+    .book__list__circle{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .book--list{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .book__list__left {
+        margin-left: 0;
     }
 }
