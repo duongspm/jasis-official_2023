@@ -35,7 +35,7 @@
     position: relative;
     overflow: hidden;
     transition: .3s linear;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.3;
     font-weight: 500;
 }
@@ -96,16 +96,22 @@
     display: flex;
     justify-content: space-between;
 }
-
+.register__left{
+    margin-right: 25px;
+    width: 40%;
+}
+.register__right{
+    width: 40%;
+}
 .register__list p {
     margin-top: 5px;
 }
 .list-li-dot{
     list-style-image:url('../img/point/point_dot.png');
-    line-height: 1.5;
+    line-height: 2;
 }
 .list-li-dot li p{
-    margin-left: -5px;
+    margin-left: -2px;
 }
 .list-li-dot-black{
     color: #000000;
@@ -149,7 +155,7 @@
     margin-top: 30px;
     border-radius: 6px;
     background-color: #ffffff;
-    padding: 13.5px 0;
+    padding: 13px 0;
     text-align: center;
     position: relative;
 }
@@ -186,17 +192,22 @@
 .mr-b-70 {
     margin-bottom: 70px;
 }
-
-.p-text {
+.mr-t-15{
+    margin-top: 15px;
+}
+.p-t-20 {
     padding-top: 20px;
 }
 
 .register__step__content {
     width: 45%;
 }
+.register__step__content p{
+    line-height: 2;
+}
 
 .register__step__img {
-    width: 50%;
+    width: 51%;
 }
 
 .giftcard {
@@ -213,17 +224,17 @@
 }
 
 .giftcard__right {
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .giftcard__bg {
-    padding: 20px 0;
+    padding: 18px 0;
     text-align: center;
     background-color: #fff5ec;
 }
 
 .points__time {
-    margin-top: 5px;
+    margin-top: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +247,9 @@
 }
 
 .txt--big {
-    font-size: 25px
+    font-size: 25px;
+    display: inline-block;
+    line-height: 1.5;
 }
 
 .giftcard__content {
@@ -247,7 +260,7 @@
 .spScroll .swipe {
     display: none;
 }
-.spScroll1 .swipe {
+.spScroll1 .swipe1 {
     display: none;
 }
 
@@ -396,18 +409,12 @@
 }
 
 .dvd__img {
-    width: 35%;
+    width: 40%;
     overflow: hidden;
 }
 
-.dvd__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .point__dvd__content {
-    width: 65%;
+    width: 60%;
     padding-left: 40px;
 }
 
@@ -443,7 +450,7 @@
     border-radius: 5px;
     font-weight: 500;
     margin-top: 20px;
-    height: 142px;
+    height: 135px;
 }
 
 .benefits__left {
@@ -473,6 +480,7 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 20px 20px 20px 0;
+    line-height: 2;
 }
 
 .benefits__right ul {
@@ -544,13 +552,16 @@
 .seminar__btn {
     background-color: #0075b8;
     border-radius: 5px;
-    padding: 20px 92px;
+    padding: 13px 0;
     color: #ffffff;
     font-size: 18px;
     position: relative;
     transition: 0.2s linear;
     cursor: pointer;
     border: 1px solid #0075b8;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
 }
 
 .seminar__btn::after {
@@ -680,7 +691,6 @@
 }
 
 .info-row-list {
-    /* padding-left: 40px; */
     padding-left: 25px;
     display: flex;
     flex-direction: column;
@@ -710,10 +720,10 @@
     font-size: 16px;
     text-indent: 1em;
 }
-
+.txt-caption{
+    font-size: 12px;
+}
 .book__box {
-    /* display: grid;
-    grid-template-columns: 380px 239px 380px; */
     display: flex;
     justify-content: space-between;
 }
@@ -753,8 +763,35 @@
 .book__list {
     width: 300px;
     background-color: #e7f1f3;
-    padding: 20px 50px 20px 66px;
+    padding: 20px;
     border-radius: 5px;
+    text-align: center;
+}
+.list__dot ul{
+    text-align: left;
+    display: inline-block;
+}
+
+.list__dot ul li {
+    font-weight: 500;
+    line-height: 1.7;
+}
+.list__dot ul li::marker {
+    color: #000000;
+    font-size: 20px;
+}
+
+.list__dot ul .text--dot-blue{
+    list-style-image: url('../img/point/point_dot-blue.png');
+    color: #18517f;
+}
+
+.list__dot ul .text--dot-black{
+    list-style-image: url('../img/point/point_dot-black.png');
+    color: #000000;
+}
+.list__dot ul li p{
+    margin-left: -3px;
 }
 
 .book__list__circle {
@@ -765,8 +802,7 @@
 
 .book__list__left {
     width: 55px;
-    margin-left: 17px;
-    margin-right: 10px;
+    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -807,8 +843,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin: 0 45px; */
-    /* width: 239px; */
 }
 
 .book__middle__img {
@@ -1066,6 +1100,7 @@
     .benefits {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 
     .benefits__left {
@@ -1083,15 +1118,21 @@
 
     .seminar__table {
         display: flex;
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     .subnav a {
-        font-size: min(2.5vw, 1.7rem);
+        font-size: min(2.5vw, 1.6rem);
     }
 
     .register__list {
         flex-direction: column;
+    }
+    .register__left{
+        width: 100%;
+    }
+    .register__right{
+        width: 100%;
     }
 
     .action-col1 .action-row,
@@ -1153,18 +1194,10 @@
         width: 100%;
     }
     .giftcard__right {
-        padding-left: 0;
+        padding: 0;
         margin-top: 10px;
     }
-    /* .action-col3 {
-        width: 120px;
-    }
-    .action-col2, .action-col1 {
-        width: calc(calc(100% - 120px) / 2);
-    }
-    .action__point__table {
-        font-size: min(13px, 3vw);
-    } */
+
     .action__point__table{
         width: 900px;
     }
@@ -1175,7 +1208,7 @@
         position: relative;
     }
 
-    .spScroll1 .swipe {
+    .spScroll1 .swipe1 {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -1192,22 +1225,26 @@
         display: flex;
         flex-direction: column;
         margin-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .seminar__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .seminar__right{
         width: 100%;
         margin: 20px 0;
     }
     .giftcard__bg{
-        padding: 20px;
+        padding: 15px;
     }
     .giftcard {
         padding: 10px;
     }
     .book__list {
         width: 100%;
-    }
-    .subnav {
-        justify-content: center;
     }
     .subnav a {
         width: 49%;
@@ -1264,8 +1301,12 @@
     .register__box{
         padding: 18px;
     }
+    .seminar__table {
+        margin-top: 10px;
+    }
 }
-@media (max-width: 414px) {
+
+@media (max-width: 460px) {
     .lottery__title {
         margin-bottom: 10px;
     }
@@ -1294,14 +1335,11 @@
     }
     .seminar__btn {
         width: 100%;
-        padding: 20px 82px;
     }
     .benefits__right {
         height: auto;
     }
-    .seminar__table {
-        margin-top: 120px;
-    }
+
     .lottery-col1{
         width: 33%;
     }
@@ -1319,10 +1357,13 @@
         margin-top: 30px;
     }
     .points__time{
-        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .txt--big{
-        font-size: 18px;
+    .points__time--from{
+        margin-right: 0;
     }
     .info__table{
         margin-top: 25px;
@@ -1333,11 +1374,8 @@
     {   
         padding: 15px;
     }
-    .points__time--from {
-        margin-right: 5px;
-    }
+
     .seminar__btn {
-        padding: 20px;
         text-align: center;
     }
     .info-row {
@@ -1354,11 +1392,7 @@
     .book--list {
         width: calc(100% - 87px);
     }
-    .book__list {
-        background-color: #e7f1f3;
-        padding: 20px 10px 20px 10px;
-        /* font-size: 13px; */
-    }
+
     .book__list__circle{
         width: auto;
     }
@@ -1372,7 +1406,10 @@
     .book__content {
         padding: 15px;
     }
+
 }
+
+
 @media (max-width: 320px){
     .book__list__circle{
         width: auto;
